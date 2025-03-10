@@ -1,0 +1,61 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1505.vea_4b_20a_4a_495">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2247.va_423189a_7dff"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2247.va_423189a_7dff">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>Execute pipeline</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4043.va_fb_de6a_a_8b_f5">
+    <script>pipeline {
+    agent any
+    
+    stages {
+        stage(&quot;Libraries instalation&quot;) {
+            steps {
+                build job: &quot;Libraries instalation&quot;
+            }
+        }
+    
+       stage(&quot;Clone repo&quot;) {
+            steps {
+                build job: &quot;Clone repo&quot;
+            }
+        }
+        
+        stage(&quot;Create data&quot;) {
+            steps {
+                build job: &quot;Create data&quot;
+            }
+        }
+        
+        stage(&quot;Data preprocessing&quot;) {
+            steps {
+                build job: &quot;Data preprocessing&quot;
+            }
+        }
+        
+        stage(&quot;Model_preparation&quot;) {
+            steps {
+                build job: &quot;Model_preparation&quot;
+            }
+        }
+        
+        stage(&quot;Model_testing&quot;) {
+            steps {
+                build job: &quot;Model_testing&quot;
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
