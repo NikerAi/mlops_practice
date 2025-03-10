@@ -1,0 +1,11 @@
+Started by upstream project "[8mha:////4AWVLMTzTFuf33B/VQW5zuUnrnTrIyhCAot3csCCjQX9AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JP2CzIJUoI2p+gA2MfzBwwAAAA==[0mpipeline" build number [8mha:////4M85XSwlf9BWKWo6O5asEXHxxiAd0ArWCvzrVKE5Ms1+AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBn79rPwk/YLMglSgjan6hgBTiow8xAAAAA==[0m1
+originally caused by:
+ Started by user [8mha:////4J3O+EsbDayGBSFFPtjCLi+hXt6VHFjk6EEoHe2Z8rlGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Create data
+[Create data] $ /bin/sh -xe /tmp/jenkins7162898656965396462.sh
++ cd /var/lib/jenkins/workspace/Clone repo/lab1/
++ python3 /var/lib/jenkins/workspace//Clone repo/lab1//data_creation.py
++ echo Data created successfully
+Data created successfully
+Finished: SUCCESS

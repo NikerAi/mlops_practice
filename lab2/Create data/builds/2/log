@@ -1,0 +1,11 @@
+Started by user [8mha:////4J3O+EsbDayGBSFFPtjCLi+hXt6VHFjk6EEoHe2Z8rlGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Create data
+[Create data] $ /bin/sh -xe /tmp/jenkins16458768763665328620.sh
++ python3 /var/lib/jenkins/workspace/Data creation/lab1/data_creation.py
+Traceback (most recent call last):
+  File "/var/lib/jenkins/workspace/Data creation/lab1/data_creation.py", line 6, in <module>
+    iris = load_iris(as_frame=True)
+TypeError: load_iris() got an unexpected keyword argument 'as_frame'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
