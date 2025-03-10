@@ -1,0 +1,24 @@
+Started by user [8mha:////4J3O+EsbDayGBSFFPtjCLi+hXt6VHFjk6EEoHe2Z8rlGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Data preprocessing
+[Data preprocessing] $ /bin/sh -xe /tmp/jenkins10355718959519292552.sh
++ ls /var/lib/jenkins/workspace/Data preprocessing
++ cp -rT /var/lib/jenkins/workspace/Create data /var/lib/jenkins/workspace/Data preprocessing
++ ls /var/lib/jenkins/workspace/Data preprocessing
+test_dataset.csv
+train_dataset.csv
++ sudo python3 /var/lib/jenkins/workspace/Clone repo/lab1/data_preprocessing.py
+Traceback (most recent call last):
+  File "/var/lib/jenkins/workspace/Clone repo/lab1/data_preprocessing.py", line 15, in <module>
+    df_std =  pd.DataFrame(data=std.fit_transform(df_train.drop(columns=['target'])), columns=['sepal length (cm)', 'sepal width (cm)', 'petallength (cm)', 'petal width (cm)'])
+  File "/usr/lib/python3/dist-packages/pandas/core/frame.py", line 4110, in drop
+    return super().drop(
+  File "/usr/lib/python3/dist-packages/pandas/core/generic.py", line 3914, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/lib/python3/dist-packages/pandas/core/generic.py", line 3946, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/lib/python3/dist-packages/pandas/core/indexes/base.py", line 5340, in drop
+    raise KeyError("{} not found in axis".format(labels[mask]))
+KeyError: "['target'] not found in axis"
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

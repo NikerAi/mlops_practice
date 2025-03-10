@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.21-464.vc9fa_a_0d6265d">
+      <queuingDurationMillis>15</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>10</buildableDurationMillis>
+      <waitingDurationMillis>2</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+  </actions>
+  <queueId>17</queueId>
+  <timestamp>1741522137688</timestamp>
+  <startTime>1741522137699</startTime>
+  <result>SUCCESS</result>
+  <duration>4707</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/Libraries instalation</workspace>
+  <hudsonVersion>2.492.2</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

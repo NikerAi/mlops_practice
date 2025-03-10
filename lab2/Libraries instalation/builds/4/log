@@ -1,0 +1,25 @@
+Started by user [8mha:////4J3O+EsbDayGBSFFPtjCLi+hXt6VHFjk6EEoHe2Z8rlGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Libraries instalation
+[Libraries instalation] $ /bin/sh -xe /tmp/jenkins7513217093412586857.sh
++ echo Installing pandas
+Installing pandas
++ sudo apt-get install python3-pandas -y
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-pandas is already the newest version (0.25.3+dfsg-7).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
++ echo Pandas installed successfully
+Pandas installed successfully
++ echo Installing sklearn
+Installing sklearn
++ sudo apt-get install python3-sklearn -y
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-sklearn is already the newest version (0.22.2.post1+dfsg-5).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
++ echo Sklearn installed successfully
+Sklearn installed successfully
+Finished: SUCCESS
