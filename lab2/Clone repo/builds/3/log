@@ -1,0 +1,17 @@
+Started by user [8mha:////4J3O+EsbDayGBSFFPtjCLi+hXt6VHFjk6EEoHe2Z8rlGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Data creation
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Data creation/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/NikerAi/mlops_practice.git # timeout=10
+Fetching upstream changes from https://github.com/NikerAi/mlops_practice.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/NikerAi/mlops_practice.git +refs/pull/*:refs/remotes/origin/pr/* # timeout=10
+Seen branch in repository master/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE

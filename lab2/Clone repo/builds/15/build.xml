@@ -1,0 +1,96 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamCause plugin="pipeline-build-step@557.v95d96f77b_2b_8">
+            <upstreamProject>pipeline</upstreamProject>
+            <upstreamUrl>job/pipeline/</upstreamUrl>
+            <upstreamBuild>1</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause>
+                <userId>admin</userId>
+              </hudson.model.Cause_-UserIdCause>
+            </upstreamCauses>
+            <nodeId>12</nodeId>
+          </org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction plugin="pipeline-build-step@557.v95d96f77b_2b_8">
+      <upstreamNodeId>12</upstreamNodeId>
+      <upstreamRunId>pipeline#1</upstreamRunId>
+    </org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction>
+    <org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerAction plugin="pipeline-build-step@557.v95d96f77b_2b_8">
+      <triggers>
+        <org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerAction_-Trigger>
+          <context class="org.jenkinsci.plugins.workflow.cps.CpsStepContext" plugin="workflow-cps@4043.va_fb_de6a_a_8b_f5">
+            <executionRef class="flow-owner" plugin="workflow-job@1505.vea_4b_20a_4a_495">
+              <job>pipeline</job>
+              <id>1</id>
+            </executionRef>
+            <id>12</id>
+            <bodyHeads/>
+            <threadId>6</threadId>
+            <stepDescriptorId>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStep</stepDescriptorId>
+          </context>
+          <propagate>true</propagate>
+          <waitForStart>false</waitForStart>
+        </org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerAction_-Trigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.21-464.vc9fa_a_0d6265d">
+      <queuingDurationMillis>6659</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>2</buildableDurationMillis>
+      <waitingDurationMillis>6654</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1408.va_622a_b_f5b_1b_1">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@5.7.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/mlops/main</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@6.1.2">
+              <sha1>68465c2ec8ec3806d237d7f6251271b9a9ce7493</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/mlops/main</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>15</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/NikerAi/mlops_practice.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.scm.SCMRevisionState_-None/>
+  </actions>
+  <queueId>52</queueId>
+  <timestamp>1741534144710</timestamp>
+  <startTime>1741534144728</startTime>
+  <result>SUCCESS</result>
+  <duration>757</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/Clone repo</workspace>
+  <hudsonVersion>2.492.2</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@5.7.0">
+    <authorOrCommitter>false</authorOrCommitter>
+    <showEntireCommitSummaryInChanges>true</showEntireCommitSummaryInChanges>
+  </scm>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>
