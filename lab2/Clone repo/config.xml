@@ -1,34 +1,5 @@
-<?xml version='1.1' encoding='UTF-8'?>
-<project>
-  <actions/>
-  <description>Clone repo</description>
-  <keepDependencies>false</keepDependencies>
-  <properties/>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.7.0">
-    <configVersion>2</configVersion>
-    <userRemoteConfigs>
-      <hudson.plugins.git.UserRemoteConfig>
-        <name>mlops</name>
-        <url>https://github.com/NikerAi/mlops_practice.git</url>
-        <credentialsId>ed0e0ad4-258e-4e96-8b86-8e5036e6084d</credentialsId>
-      </hudson.plugins.git.UserRemoteConfig>
-    </userRemoteConfigs>
-    <branches>
-      <hudson.plugins.git.BranchSpec>
-        <name>*/main</name>
-      </hudson.plugins.git.BranchSpec>
-    </branches>
-    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
-    <submoduleCfg class="empty-list"/>
-    <extensions/>
-  </scm>
-  <canRoam>true</canRoam>
-  <disabled>false</disabled>
-  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
-  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers/>
-  <concurrentBuild>false</concurrentBuild>
-  <builders/>
-  <publishers/>
-  <buildWrappers/>
-</project>
+<description>Clone repo</description>
+<name>mlops</name>
+<url>https://github.com/NikerAi/mlops_practice.git</url>
+<credentialsId>ed0e0ad4-258e-4e96-8b86-8e5036e6084d</credentialsId>
+<name>*/main</name>
