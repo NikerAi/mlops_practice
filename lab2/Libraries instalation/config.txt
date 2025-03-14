@@ -1,0 +1,9 @@
+echo "Installing pandas"
+sudo apt-get install python3-pandas -y
+echo &quot;Pandas installed successfully&quot;
+echo &quot;Installing sklearn&quot;
+sudo apt-get install python3-sklearn -y
+echo &quot;Sklearn installed successfully&quot;
+echo &quot;Installing numpy&quot;
+sudo apt-get install python3-numpy -y
+echo "Numpy installed successfully"

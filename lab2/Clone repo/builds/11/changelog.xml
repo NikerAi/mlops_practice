@@ -1,9 +1,0 @@
-commit e7504b4f73356e6b533e8a373e712b9ac800e55f
-tree 6b3f1a03268a66eb70136ee732c68cf249f51836
-parent 11b955583eb674387aa5ef8a6c9e78b2c30a89d8
-author Nikita Bytsyuk <nikita.05.98@mail.ru> 2025-03-09 17:25:28 +0500
-committer GitHub <noreply@github.com> 2025-03-09 17:25:28 +0500
-
-    Update data_creation.py
-
-:100644 100644 870b3d614d6228d43ec86d656c9169a9c43659c2 c4938d62651bbe439c2888d7e70d99cab0a47bdd M	lab1/data_creation.py
