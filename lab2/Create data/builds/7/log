@@ -1,6 +1,0 @@
-Started by user [8mha:////4J3O+EsbDayGBSFFPtjCLi+hXt6VHFjk6EEoHe2Z8rlGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
-Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/Create data
-[Create data] $ /bin/sh -xe /tmp/jenkins15447065015032295116.sh
-+ python3 /var/lib/jenkins/workspace//Clone repo/lab1//data_creation.py
-Finished: SUCCESS
