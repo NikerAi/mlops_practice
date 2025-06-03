@@ -1,0 +1,74 @@
+commit 7aebd4033ff48f5ddecef409189022606c1b7b43
+Author: NikerAi <nikita.05.98@mail.ru>
+Date:   Tue Jun 3 00:28:32 2025 +0500
+
+    Final change
+
+diff --git a/lab4/titanic.csv.dvc b/lab4/titanic.csv.dvc
+index 7f66f04..47e6536 100644
+--- a/lab4/titanic.csv.dvc
++++ b/lab4/titanic.csv.dvc
+@@ -1,5 +1,5 @@
+ outs:
+-- md5: 10ef4ae9645fffd98d2d4bc3e80cba81
+-  size: 53688
++- md5: 33de64d20d893132ab225004b30f8c15
++  size: 53791
+   hash: md5
+   path: titanic.csv
+
+commit 9f8f5867c7a5b92a09c19973a413400ef371d558
+Author: NikerAi <nikita.05.98@mail.ru>
+Date:   Tue Jun 3 00:19:20 2025 +0500
+
+    second modification
+
+diff --git a/lab4/titanic.csv.dvc b/lab4/titanic.csv.dvc
+index f12eb34..7f66f04 100644
+--- a/lab4/titanic.csv.dvc
++++ b/lab4/titanic.csv.dvc
+@@ -1,5 +1,5 @@
+ outs:
+-- md5: 0d42d12f22afa8d2f85fbc7fa7cc50b4
+-  size: 45852
++- md5: 10ef4ae9645fffd98d2d4bc3e80cba81
++  size: 53688
+   hash: md5
+   path: titanic.csv
+
+commit 4568369ff75bd7ac9633a3b52f1a33252c0b9978
+Author: NikerAi <nikita.05.98@mail.ru>
+Date:   Tue Jun 3 00:16:22 2025 +0500
+
+    first modification
+
+diff --git a/lab4/titanic.csv.dvc b/lab4/titanic.csv.dvc
+index 83a6baa..f12eb34 100644
+--- a/lab4/titanic.csv.dvc
++++ b/lab4/titanic.csv.dvc
+@@ -1,5 +1,5 @@
+ outs:
+-- md5: 6a7a2ed01936ef56e903ba2bb2f6fbc6
+-  size: 57910
++- md5: 0d42d12f22afa8d2f85fbc7fa7cc50b4
++  size: 45852
+   hash: md5
+   path: titanic.csv
+
+commit 4c9e184c0655175f30f9f529aaefca8b521da02d
+Author: NikerAi <nikita.05.98@mail.ru>
+Date:   Tue Jun 3 00:12:30 2025 +0500
+
+    Initial data
+
+diff --git a/lab4/titanic.csv.dvc b/lab4/titanic.csv.dvc
+new file mode 100644
+index 0000000..83a6baa
+--- /dev/null
++++ b/lab4/titanic.csv.dvc
+@@ -0,0 +1,5 @@
++outs:
++- md5: 6a7a2ed01936ef56e903ba2bb2f6fbc6
++  size: 57910
++  hash: md5
++  path: titanic.csv
