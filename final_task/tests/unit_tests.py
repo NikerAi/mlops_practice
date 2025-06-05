@@ -1,3 +1,4 @@
+import pytest
 from final_task.backend.load_data import load_data
 from final_task.backend.data_preprocessing import scale_data
 from final_task.backend.model_training import train_model
@@ -5,6 +6,12 @@ import os
 import pandas as pd
 import pickle
 from sklearn.metrics import accuracy_score
+from streamlit.testing.v1 import AppTest
+
+
+@pytest.fixture
+def run_app():
+	return AppTest.from_file("final_task/frontend/app.py").run()
 
 
 def test_load_data():
@@ -43,8 +50,9 @@ def test_train_model():
 
 
 def test_model_performance():
-	"""check if data quality is acceptable or model needs to be refitted
-		30% of dataset is chosen at random and model tested
+	"""
+	check if data quality is acceptable or model needs to be refitted
+	30% of dataset is chosen at random and model tested
 	"""
 	with open("final_task/backend/model/rf_clf.pkl", "rb") as m:
 		rf_clf = pickle.load(m)
@@ -56,4 +64,21 @@ def test_model_performance():
 	score = accuracy_score(y, rf_clf.predict(X))
 	assert score >= 0.9
 
+
+def test_app(run_app):
+	"""test streamlit interface"""
+	for i in range(4):
+		run_app.number_input[i].set_value(i).run()
+
+	assert run_app.session_state["sl"] == 0
+	assert run_app.session_state["sw"] == 1
+	assert run_app.session_state["pl"] == 2
+	assert run_app.session_state["pw"] == 3
+
+
+def test_model_response(run_app):
+	"""check if model returns a result"""
+	run_app.button[0].click().run()
+	print(run_app.success.values[0])
+	assert run_app.success.values[0] == "Предсказанный тип: versicolor"
 
