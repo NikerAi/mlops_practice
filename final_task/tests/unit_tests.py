@@ -75,7 +75,7 @@ def test_app(run_app):
 	assert run_app.session_state["pl"] == 2
 	assert run_app.session_state["pw"] == 3
 
-# git commit -m 'Added interface interaction testing'
+
 def test_model_response(run_app):
 	"""check if model returns a result"""
 	run_app.button[0].click().run()
