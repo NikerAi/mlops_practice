@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-def load_data():
+def load_data(save_path):
 	"""Load iris dataset"""
 	iris = load_iris()
 	df = pd.DataFrame(
@@ -12,9 +12,9 @@ def load_data():
 
 	df["target"] = df["target"].astype("int8")
 	df["target_names"] = df["target"].map(lambda x: iris["target_names"][x])
-	df.to_csv("data/origin_iris_dataset.csv", index=False)
+	df.to_csv(save_path, index=False)
 	return df
 
 
 if __name__ == '__main__':
-	load_data()
+	load_data("data/origin_iris_dataset.csv")
