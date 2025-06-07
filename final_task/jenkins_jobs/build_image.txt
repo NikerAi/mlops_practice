@@ -1,0 +1,4 @@
+COMMIT_HASH_FULL=${GIT_COMMIT}
+IMAGE_REF="mlops:$COMMIT_HASH_FULL"
+cd /var/lib/jenkins/workspace/clone_repo/
+docker build -t $IMAGE_REF .

@@ -1,0 +1,11 @@
+#!/bin/sh -xe
+pwd
+/usr/bin/python3 -m venv /var/lib/jenkins/workspace/install_requirements/venv
+. /var/lib/jenkins/workspace/install_requirements/venv/bin/activate
+pip install --upgrade pip
+
+
+# Install requirements from different folders
+pip install -r /var/lib/jenkins/workspace/clone_repo/final_task/backend/requirements.txt
+pip install -r /var/lib/jenkins/workspace/clone_repo/final_task/frontend/requirements.txt
+pip install -r /var/lib/jenkins/workspace/clone_repo/final_task/tests/requirements.txt

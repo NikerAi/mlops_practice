@@ -1,0 +1,13 @@
+# go to porject folder
+cd /var/lib/jenkins/workspace/clone_repo/final_task
+
+# Init DVC
+dvc init -f --no-scm
+
+# Configure Google Drive remote
+dvc remote add -d myremote gdrive://100Bx1wyEIm9yhYvVjJTdWYwaDcxH6AxZ
+dvc remote modify myremote gdrive_service_account_json_file_path "$GOOGLE_DRIVE_CREDENTIALS"
+dvc remote modify myremote gdrive_use_service_account true
+
+# Pull data
+dvc pull

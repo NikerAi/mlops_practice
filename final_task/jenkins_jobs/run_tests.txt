@@ -1,0 +1,3 @@
+cd /var/lib/jenkins/workspace/clone_repo
+. /var/lib/jenkins/workspace/install_requirements/venv/bin/activate
+python3 -m pytest final_task/tests/unit_tests.py

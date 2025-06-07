@@ -1,0 +1,5 @@
+docker stop $(docker ps -aq)
+COMMIT_HASH_FULL=${GIT_COMMIT}
+IMAGE_REF="mlops:$COMMIT_HASH_FULL"
+cd /var/lib/jenkins/workspace/clone_repo/
+docker run -d -p 8501:8501 $IMAGE_REF
