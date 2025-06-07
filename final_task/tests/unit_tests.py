@@ -1,7 +1,7 @@
 import pytest
-from final_task.backend.load_data import load_data
-from final_task.backend.data_preprocessing import scale_data
-from final_task.backend.model_training import train_model
+from backend.load_data import load_data
+from backend.data_preprocessing import scale_data
+from backend.model_training import train_model
 import os
 import pandas as pd
 import pickle
