@@ -13,7 +13,7 @@ def predict_class(to_predict):
 	row = pd.DataFrame(data=scaled_values.reshape(1, -1), columns=[
 		"sepal length (cm)", "sepal width (cm)", "petal length (cm)", "petal width (cm)"
 	])
-	with open("final_task/backend/model/rf_clf.pkl", "rb") as m:
+	with open("backend/model/rf_clf.pkl", "rb") as m:
 		model = pickle.load(m)
 
 	prediction = model.predict(row)
