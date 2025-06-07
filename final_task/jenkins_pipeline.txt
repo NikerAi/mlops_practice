@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone repository') {
+            steps {
+                build job: 'clone_repo'
+            }}
+        stage('Install requirements') {
+            steps {
+                build job: 'install_requirements'
+            }}
+        stage('Pull dvc data') {
+            steps {
+                build job: 'pull_dvc_data'
+            }}
+        stage('Run tests') {
+            steps {
+                build job: 'run_tests'
+            }}
+        stage('Build image') {
+            steps {
+                build job: 'build_image'
+            }}
+        stage('Run docker') {
+            steps {
+                build job: 'run_docker'
+                echo 'Docker container started successfully'
+            }}
+    }
+}
