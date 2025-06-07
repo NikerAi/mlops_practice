@@ -1,11 +1,11 @@
 import streamlit as st
-from backend.make_prediction import predict_class
+from final_task.backend.make_prediction import predict_class
 
 
 # set title
 st.title("Iris Classifier")
 # show explanatory image
-st.image("frontend/iris.png")
+st.image("final_task/frontend/iris.png")
 
 # input
 sepal_length = st.number_input("Sepal length (cm)", min_value=4.0, max_value=8.0, value=5.8, key="sl")

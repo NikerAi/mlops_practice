@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir \
     -r backend/requirements.txt \
     -r frontend/requirements.txt
 
-WORKDIR /app/final_task
+WORKDIR /app
 EXPOSE 8501
-CMD ["python", "-m", "streamlit", "run", "frontend/app.py"]
+CMD ["python", "-m", "streamlit", "run", "final_task/frontend/app.py"]
